@@ -1,0 +1,16 @@
+[
+    {
+        "empId": "3",
+        "empName": "Rishi",
+        "empSalary": 500090.12,
+        "empAge": 16,
+        "empCity": "Surat68"
+    },
+    {
+        "empId": "4",
+        "empName": "Megha",
+        "empSalary": 7000000.12,
+        "empAge": 22,
+        "empCity": "Siliguri58"
+    }
+]
