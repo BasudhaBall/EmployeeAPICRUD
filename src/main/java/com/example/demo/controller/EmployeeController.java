@@ -27,10 +27,10 @@ public class EmployeeController {
 	EmployeeRepository employeeRepository;
 
 	@PostMapping("/employees")
-	public String createNewEmployee(@RequestBody Employee employee) {
-		employeeRepository.save(employee);
+	public String createNewEmployee(@RequestBody List<Employee> employee) {
+		employeeRepository.saveAll(employee);
+		return "Employee Database Created";
 
-		return "Emlpoyee Created in Database";
 	}
 
 	@GetMapping("/employees")

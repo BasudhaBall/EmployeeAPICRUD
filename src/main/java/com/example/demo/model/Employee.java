@@ -2,8 +2,6 @@ package com.example.demo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -12,7 +10,6 @@ import javax.persistence.Table;
 @Table(name = "employee")
 public class Employee {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "empid")
 	private long empId;
 
@@ -84,6 +81,5 @@ public class Employee {
 		return "Employee [empId=" + empId + ", empName=" + empName + ", empSalary=" + empSalary + ", empAge=" + empAge
 				+ ", empCity=" + empCity + "]";
 	}
-	
 
 }
